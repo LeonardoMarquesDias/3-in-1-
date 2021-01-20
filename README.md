@@ -1,2 +1,2 @@
-# 3 in 1 
+# three in one
   3 exercises in a single page
