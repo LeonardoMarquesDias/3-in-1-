@@ -3,26 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>Three in One</title>
 </head>
 
-<body onload="carregar()">
+<body onload="carregar()" >
 
   <div class="wrap" >
 
     <div class="exec-1">
       <header>
         <div class="hours">
-          <h2 id="day-hours">Hora do Dia</h2>
-          <p id="msg-hours">Agora são 10h</p>
+          <h2 id="day-hours"> Days </h2>
+          <p id="msg-hours"> Time </p>
        </div> <!--exec1--> 
       </header>
   
       <section>
         <div class="exec-2">
           <div class="content-2">
-            <p>test</p>
+
+            <h1 class="title">Age Checker</h1>
+
+            <p>Year of Birth:
+              <input type="number" name="txtyear" id="txtyear" min="0">
+            </p>
+            
+            <p>Sexo:
+              <input type="radio" name="radsex" id="mas" checked> 
+              <label for="mas">Male</label>
+              <input type="radio" name="radsex" id="male" >
+              <label for="male">Female</label>
+            </p>
+
+            <p>
+              <button type="button" value="Check" onclick="check()">Check</button>
+            </p>
+
+            <div id="res">
+              Detector:
+            </div>
+
           </div>
         </div><!--exec2-->
 
